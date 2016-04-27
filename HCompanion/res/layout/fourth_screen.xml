@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/blue" >
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="137dp"
+        android:layout_weight="40.53" >
+
+		<LinearLayout 
+		    android:orientation="vertical"
+			android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvSQLdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="TextView" />
+        </LinearLayout>
+        </ScrollView>
+	
+	
+
+	<Button
+	    android:id="@+id/bCommentss"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="6.80"
+	    android:text="Add Comments" />
+
+	<EditText
+	    android:id="@+id/etpostno"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="6.42"
+	    android:ems="10" 
+	    android:textColor="#fff"
+	    android:textSize="20dp"
+	    android:hint="Post No." 
+        android:visibility="invisible" >
+
+	    <requestFocus />
+	</EditText>
+	
+	 <ScrollView
+	     android:layout_width="fill_parent"
+	     android:layout_height="26dp"
+	     android:layout_weight="39.20" >
+
+		<LinearLayout 
+		     android:orientation="vertical"
+			android:layout_width="match_parent"
+		    android:layout_height="match_parent">
+
+	   <EditText
+	       android:id="@+id/etcommentss"
+	       android:layout_width="match_parent"
+	       android:layout_height="91dp"
+	       android:ems="10"
+	       android:hint="Comment"
+	       android:textColor="#fff"
+	       android:visibility="invisible" />
+
+		 </LinearLayout>
+        </ScrollView>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="46dp"
+	    android:orientation="horizontal" >
+
+	    <Button
+	        android:id="@+id/bSQLsubmit"
+	        android:layout_width="110dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.72"
+	        android:text="Submit" />
+
+	    <Button
+	        android:id="@+id/bSQLExitt"
+	        android:layout_width="110dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.30"
+	        android:text="Back" />
+
+	</LinearLayout>
+
+</LinearLayout>

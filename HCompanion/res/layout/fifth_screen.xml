@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etgetc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.53"
+            android:ems="10"
+            android:textSize="20dp"
+            android:hint=" Register No." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/bSQLgetc"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:text="Get Comments" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSQLcomm"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:text="Comments..."
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bdeletecomm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/bSQLExitttt"
+            android:layout_width="116dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.06"
+            android:text="Back" />
+    </LinearLayout>
+
+</LinearLayout>

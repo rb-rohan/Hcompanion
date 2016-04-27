@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue" >
+
+    
+
+        <requestFocus />
+
+    <EditText
+        android:id="@+id/etSQLinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvdesc"
+        android:layout_marginBottom="28dp"
+        android:textSize="20dp"
+        android:layout_toLeftOf="@+id/bSQLexit"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tvinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etSQLinfo"
+        android:layout_alignLeft="@+id/etSQLinfo"
+        android:layout_marginBottom="24dp"
+        android:textSize="20dp"
+        android:text="Short Info about missing Valuable" />
+
+    <TextView
+        android:id="@+id/tvdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etSQLinfo"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:text="Description" />
+
+    <EditText
+        android:id="@+id/etSQLregno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvregno"
+        android:layout_below="@+id/tvregno"
+        android:layout_marginTop="18dp"
+        android:textSize="20dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/tvregno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvinfo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="Enter your Reg.No." />
+
+    <Button
+        android:id="@+id/bSQLpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="14dp"
+        android:text="Post" />
+
+    <Button
+        android:id="@+id/bSQLupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bSQLpost"
+        android:layout_alignBottom="@+id/bSQLpost"
+        android:layout_centerHorizontal="true"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/bSQLexit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bSQLupdate"
+        android:layout_alignBottom="@+id/bSQLupdate"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:text="Back" /> 
+
+    <EditText
+        android:id="@+id/etSQLdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdesc"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/bSQLexit"
+        android:textSize="20dp"
+        android:ems="10" />
+
+</RelativeLayout>
